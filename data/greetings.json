@@ -1,0 +1,42 @@
+[
+  {
+    "startHour": 5,
+    "endHour": 11,
+    "greeting": "Good Morning 🌞",
+    "captions": [
+      "Rise and shine! Your 30-day challenge awaits — start your day strong and make every moment count.",
+      "Morning hustle, evening results! Focus on small steps today and the big wins will follow.",
+      "Start your day with energy and clarity; remember, every great journey begins with a single step."
+    ]
+  },
+  {
+    "startHour": 12,
+    "endHour": 16,
+    "greeting": "Good Afternoon ☀️",
+    "captions": [
+      "Keep the momentum going! Afternoon focus: small wins lead to big victories.",
+      "Your journey continues — don’t stop now! Take this afternoon to make real progress.",
+      "Recharge for the final stretch today; stay focused and let every effort count."
+    ]
+  },
+  {
+    "startHour": 17,
+    "endHour": 20,
+    "greeting": "Good Evening 🌇",
+    "captions": [
+      "Evening grind! Reflect on what you achieved today and prepare for tomorrow’s challenges.",
+      "Relax, reflect, and prep for tomorrow — winding down now sets you up for a strong start.",
+      "The day isn’t over yet; wrap up your tasks and finish stronger than you began."
+    ]
+  },
+  {
+    "startHour": 21,
+    "endHour": 4,
+    "greeting": "Night Owl 🌙",
+    "captions": [
+      "Burning the midnight oil? Focus now and turn your night into productive magic.",
+      "Late-night focus brings early success — use these quiet hours wisely.",
+      "Night owl mode: perfect for finishing what you started and planning for tomorrow’s victories."
+    ]
+  }
+]
