@@ -26,6 +26,6 @@ export const router = createBrowserRouter(
     },
   ],
   {
-    basename: import.meta.env.MODE === "production" ? "/fed" : "/",
+    basename: import.meta.env.PROD ? "/fed" : "/",
   }
 );
