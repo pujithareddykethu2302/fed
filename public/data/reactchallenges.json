@@ -1,0 +1,574 @@
+{
+  "days": [
+    {
+      "id": "1",
+      "dayChallenge": "Day 1",
+      "title": "React Components",
+      "shortDescription": "Learn how to build and reuse components.",
+      "longDescription": "Create your first React component and render it in the root App. Understand the structure of a React component, JSX, and how to export/import components between files.",
+      "topic": "React - Components",
+      "difficulty": "Easy",
+      "timeEstimate": "15–20 mins",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "status": "Completed",
+      "learnPoints": [
+        "Understanding JSX syntax",
+        "Creating reusable components",
+        "Component structure and rendering"
+      ],
+      "tip": "Start by thinking of each UI piece as a separate component.",
+      "previewImg": "https://react.dev/images/og-home.png"
+    },
+    {
+      "id": "2",
+      "dayChallenge": "Day 2",
+      "title": "React Props",
+      "shortDescription": "Pass data between parent and child components.",
+      "longDescription": "Create a parent component that sends data to its child component using props. Learn how data flows downward in React and how props make components dynamic.",
+      "topic": "React - Props",
+      "difficulty": "Easy",
+      "timeEstimate": "20–25 mins",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "status": "In Progress",
+      "learnPoints": [
+        "Component communication via props",
+        "Passing data from parent to child",
+        "Reusable and dynamic components"
+      ],
+      "tip": "Think of props as 'arguments' for your components — they help keep your code flexible.",
+      "previewImg": "https://res.cloudinary.com/practicaldev/image/fetch/s--y16EY6Ne--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/d4h3xik1g8x8p0pv3p7n.png"
+    },
+    {
+      "id": "3",
+      "dayChallenge": "Day 3",
+      "title": "State Management",
+      "shortDescription": "Handle dynamic data inside components.",
+      "longDescription": "Use the useState hook to manage local component state. Update UI reactively when state changes and understand the difference between props and state.",
+      "topic": "React - useState",
+      "difficulty": "Medium",
+      "timeEstimate": "25–30 mins",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "status": "Not Started",
+      "learnPoints": [
+        "Using useState hook",
+        "Re-rendering on state updates",
+        "Understanding state vs props"
+      ],
+      "tip": "State allows React components to ‘remember’ things like user input or UI toggles.",
+      "previewImg": "https://react.dev/images/docs/thinking-in-react/state-ui.png"
+    },
+    {
+      "id": "4",
+      "dayChallenge": "Day 4",
+      "title": "React useEffect",
+      "shortDescription": "Work with side effects like API calls.",
+      "longDescription": "Learn how to use the useEffect hook for performing side effects such as fetching data, manipulating DOM, or setting timers in functional components.",
+      "topic": "React - useEffect",
+      "difficulty": "Medium",
+      "timeEstimate": "30–35 mins",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "status": "Not Started",
+      "learnPoints": [
+        "Using useEffect for side effects",
+        "Cleanup functions",
+        "Dependency arrays"
+      ],
+      "tip": "Always include dependencies in your useEffect to avoid infinite re-renders.",
+      "previewImg": "https://miro.medium.com/v2/resize:fit:1200/1*-oU7sZRxXOHM8s4LFcKpBQ.png"
+    },
+    {
+      "id": "5",
+      "dayChallenge": "Day 5",
+      "title": "Conditional Rendering",
+      "shortDescription": "Render components based on conditions.",
+      "longDescription": "Learn how to render different UI elements conditionally using JavaScript expressions, ternary operators, and logical &&.",
+      "topic": "React - Conditional Rendering",
+      "difficulty": "Medium",
+      "timeEstimate": "25–30 mins",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "status": "Completed",
+      "learnPoints": [
+        "Using ternary operators",
+        "Conditional short-circuit rendering",
+        "Hiding/showing components dynamically"
+      ],
+      "tip": "When conditions get complex, use helper functions for readability.",
+      "previewImg": "https://reactjs.org/logo-og.png"
+    },
+    {
+      "id": "6",
+      "dayChallenge": "Day 6",
+      "title": "Lists and Keys",
+      "shortDescription": "Render multiple components using lists.",
+      "longDescription": "Learn how to render dynamic lists using the JavaScript map() function and assign unique keys for better rendering performance.",
+      "topic": "React - Lists and Keys",
+      "difficulty": "Easy",
+      "timeEstimate": "20–25 mins",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "status": "Not Started",
+      "learnPoints": [
+        "Using map() to render lists",
+        "Importance of unique keys",
+        "Handling dynamic list rendering"
+      ],
+      "tip": "Always give each list item a stable and unique key to help React track changes efficiently.",
+      "previewImg": "https://react.dev/images/docs/rendering-lists.png"
+    },
+    {
+      "id": "7",
+      "dayChallenge": "Day 7",
+      "title": "React Forms",
+      "shortDescription": "Handle user input and form submission.",
+      "longDescription": "Learn how to manage controlled and uncontrolled components, handle input change events, and capture form data effectively.",
+      "topic": "React - Forms",
+      "difficulty": "Medium",
+      "timeEstimate": "30–35 mins",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "status": "Not Started",
+      "learnPoints": [
+        "Controlled vs uncontrolled components",
+        "onChange event handling",
+        "Form validation basics"
+      ],
+      "tip": "Keep input values in state for easy form control and validation.",
+      "previewImg": "https://miro.medium.com/v2/resize:fit:1400/1*no2yH5XKZIN7RyhokW2bYg.png"
+    },
+    {
+      "id": "8",
+      "dayChallenge": "Day 8",
+      "title": "React useRef Hook",
+      "shortDescription": "Access DOM elements and persist mutable values.",
+      "longDescription": "Understand how to use the useRef hook to directly access DOM elements and store mutable values that don’t trigger re-renders.",
+      "topic": "React - useRef",
+      "difficulty": "Medium",
+      "timeEstimate": "25–30 mins",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "status": "Not Started",
+      "learnPoints": [
+        "Accessing DOM elements",
+        "Storing mutable values",
+        "Avoiding unnecessary re-renders"
+      ],
+      "tip": "Refs are useful when you need to directly manipulate a DOM element or store a value across renders.",
+      "previewImg": "https://react.dev/images/docs/hooks-reference/useref.png"
+    },
+    {
+      "id": "9",
+      "dayChallenge": "Day 9",
+      "title": "React useContext Hook",
+      "shortDescription": "Share data without prop drilling.",
+      "longDescription": "Learn how to use React’s Context API with useContext to share state globally between components without manually passing props down the tree.",
+      "topic": "React - useContext",
+      "difficulty": "Medium",
+      "timeEstimate": "30–35 mins",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "status": "Not Started",
+      "learnPoints": [
+        "Creating context providers",
+        "Consuming context with useContext",
+        "Avoiding prop drilling"
+      ],
+      "tip": "Context works best for global state like themes, user info, or app settings.",
+      "previewImg": "https://react.dev/images/docs/context.png"
+    },
+    {
+      "id": "10",
+      "dayChallenge": "Day 10",
+      "title": "React useReducer Hook",
+      "shortDescription": "Manage complex state logic in React.",
+      "longDescription": "Understand how to use the useReducer hook for managing more complex state transitions. Ideal for cases where multiple state updates depend on each other.",
+      "topic": "React - useReducer",
+      "difficulty": "Medium",
+      "timeEstimate": "35–40 mins",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "status": "Not Started",
+      "learnPoints": [
+        "Reducer functions and actions",
+        "Dispatching actions",
+        "Comparing useReducer vs useState"
+      ],
+      "tip": "When state logic grows complicated, useReducer brings clarity and structure.",
+      "previewImg": "https://react.dev/images/docs/hooks-reference/usereducer.png"
+    },
+    {
+      "id": "11",
+      "dayChallenge": "Day 11",
+      "title": "React Conditional Rendering",
+      "shortDescription": "Render UI based on conditions.",
+      "longDescription": "Use conditional statements, logical operators, and ternary expressions to show or hide elements dynamically based on state or props.",
+      "topic": "React - Conditional Rendering",
+      "difficulty": "Easy",
+      "timeEstimate": "20–25 mins",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "status": "Not Started",
+      "learnPoints": [
+        "Ternary and logical operators",
+        "Conditional components",
+        "Rendering fallback UI"
+      ],
+      "tip": "Use `&&` for simple conditionals and `? :` for multi-branch logic.",
+      "previewImg": "https://react.dev/images/docs/conditional-rendering.png"
+    },
+    {
+      "id": "12",
+      "dayChallenge": "Day 12",
+      "title": "React useEffect Hook",
+      "shortDescription": "Perform side effects in components.",
+      "longDescription": "Learn to use the useEffect hook for running side effects such as data fetching, DOM manipulation, or event listeners.",
+      "topic": "React - useEffect",
+      "difficulty": "Medium",
+      "timeEstimate": "30–35 mins",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "status": "Not Started",
+      "learnPoints": [
+        "Effect dependencies",
+        "Cleanup functions",
+        "Fetching data using useEffect"
+      ],
+      "tip": "Remember to clean up effects like event listeners to prevent memory leaks.",
+      "previewImg": "https://react.dev/images/docs/hooks-reference/useeffect.png"
+    },
+    {
+      "id": "13",
+      "dayChallenge": "Day 13",
+      "title": "React Custom Hooks",
+      "shortDescription": "Create reusable logic with custom hooks.",
+      "longDescription": "Extract repetitive stateful logic into custom hooks for reusability and cleaner components.",
+      "topic": "React - Custom Hooks",
+      "difficulty": "Medium",
+      "timeEstimate": "35–40 mins",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "status": "Not Started",
+      "learnPoints": [
+        "Creating custom hooks",
+        "Naming convention `useSomething`",
+        "Sharing logic across components"
+      ],
+      "tip": "Keep hooks pure and ensure they follow React’s rules of hooks.",
+      "previewImg": "https://react.dev/images/docs/hooks-custom.png"
+    },
+    {
+      "id": "14",
+      "dayChallenge": "Day 14",
+      "title": "React Routing Basics",
+      "shortDescription": "Add navigation using React Router.",
+      "longDescription": "Set up basic routing with react-router-dom. Create multiple pages and navigate using Link components.",
+      "topic": "React - Router",
+      "difficulty": "Medium",
+      "timeEstimate": "30–40 mins",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "status": "Not Started",
+      "learnPoints": [
+        "BrowserRouter setup",
+        "Routes and Route components",
+        "Using Link and NavLink"
+      ],
+      "tip": "Always wrap your app in BrowserRouter for navigation to work.",
+      "previewImg": "https://reactrouter.com/_astro/react-router-diagram.DqDkTThn.webp"
+    },
+    {
+      "id": "15",
+      "dayChallenge": "Day 15",
+      "title": "Nested & Dynamic Routes",
+      "shortDescription": "Handle complex routing structures.",
+      "longDescription": "Learn how to create nested routes, route parameters, and dynamic paths for detailed views.",
+      "topic": "React - Router Advanced",
+      "difficulty": "Medium",
+      "timeEstimate": "35–40 mins",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "status": "Not Started",
+      "learnPoints": [
+        "Route params with useParams",
+        "Nested routes setup",
+        "Dynamic pages (e.g. /user/:id)"
+      ],
+      "tip": "Use `useNavigate` for programmatic routing transitions.",
+      "previewImg": "https://reactrouter.com/_astro/nested-routes.C0yX4ROe.webp"
+    },
+    {
+      "id": "16",
+      "dayChallenge": "Day 16",
+      "title": "React useMemo Hook",
+      "shortDescription": "Optimize expensive calculations.",
+      "longDescription": "Learn how to memoize computationally heavy values using useMemo to improve performance.",
+      "topic": "React - useMemo",
+      "difficulty": "Medium",
+      "timeEstimate": "30–35 mins",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "status": "Not Started",
+      "learnPoints": [
+        "Memoizing values",
+        "Dependency optimization",
+        "Preventing unnecessary recalculations"
+      ],
+      "tip": "Only memoize when necessary — premature optimization can slow you down.",
+      "previewImg": "https://react.dev/images/docs/hooks-reference/usememo.png"
+    },
+    {
+      "id": "17",
+      "dayChallenge": "Day 17",
+      "title": "React useCallback Hook",
+      "shortDescription": "Memoize callback functions.",
+      "longDescription": "Understand how useCallback helps avoid unnecessary re-creations of functions and improves rendering efficiency.",
+      "topic": "React - useCallback",
+      "difficulty": "Medium",
+      "timeEstimate": "25–30 mins",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "status": "Not Started",
+      "learnPoints": [
+        "Memoizing functions",
+        "Dependency management",
+        "Working with memoized components"
+      ],
+      "tip": "Combine useCallback with React.memo for maximum optimization.",
+      "previewImg": "https://react.dev/images/docs/hooks-reference/usecallback.png"
+    },
+    {
+      "id": "18",
+      "dayChallenge": "Day 18",
+      "title": "React.memo for Components",
+      "shortDescription": "Prevent unnecessary re-renders.",
+      "longDescription": "Use React.memo to memoize functional components so they only re-render when props change.",
+      "topic": "React - Performance Optimization",
+      "difficulty": "Medium",
+      "timeEstimate": "20–25 mins",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "status": "Not Started",
+      "learnPoints": [
+        "When React.memo works best",
+        "Shallow comparison of props",
+        "Combining with useCallback"
+      ],
+      "tip": "React.memo is great for pure components with stable props.",
+      "previewImg": "https://react.dev/images/docs/react-memo.png"
+    },
+    {
+      "id": "19",
+      "dayChallenge": "Day 19",
+      "title": "Lazy Loading & Suspense",
+      "shortDescription": "Improve performance by loading components on demand.",
+      "longDescription": "Implement lazy loading using React.lazy and Suspense to optimize bundle size and initial load speed.",
+      "topic": "React - Code Splitting",
+      "difficulty": "Medium",
+      "timeEstimate": "30–35 mins",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "status": "Not Started",
+      "learnPoints": [
+        "React.lazy and dynamic imports",
+        "Using Suspense fallback UI",
+        "Bundle splitting and optimization"
+      ],
+      "tip": "Wrap lazy components with Suspense to handle loading gracefully.",
+      "previewImg": "https://react.dev/images/docs/code-splitting.png"
+    },
+    {
+      "id": "20",
+      "dayChallenge": "Day 20",
+      "title": "React Error Boundaries",
+      "shortDescription": "Catch and handle UI errors gracefully.",
+      "longDescription": "Build an ErrorBoundary component to catch runtime errors and show a fallback UI instead of crashing the app.",
+      "topic": "React - Error Handling",
+      "difficulty": "Medium",
+      "timeEstimate": "30–40 mins",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "status": "Not Started",
+      "learnPoints": [
+        "Class components and componentDidCatch",
+        "Displaying fallback UIs",
+        "Logging and debugging errors"
+      ],
+      "tip": "Error Boundaries catch errors in the render tree but not in event handlers.",
+      "previewImg": "https://react.dev/images/docs/error-boundaries.png"
+    },
+    {
+      "id": "21",
+      "dayChallenge": "Day 21",
+      "title": "Controlled vs Uncontrolled Components",
+      "shortDescription": "Learn how React manages form inputs differently.",
+      "longDescription": "Understand the difference between controlled and uncontrolled components. Build a form using both approaches and compare how state is managed.",
+      "topic": "Forms in React",
+      "difficulty": "Medium",
+      "timeEstimate": "30–35 mins",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "status": "Not Started",
+      "learnPoints": [
+        "Controlled input handling via state",
+        "Refs for uncontrolled components",
+        "Form submission management"
+      ],
+      "tip": "Use controlled inputs for predictable and testable form behavior.",
+      "previewImg": "https://react.dev/images/docs/forms-controlled-vs-uncontrolled.png"
+    },
+    {
+      "id": "22",
+      "dayChallenge": "Day 22",
+      "title": "React Portals",
+      "shortDescription": "Render components outside their parent hierarchy.",
+      "longDescription": "Create modals and tooltips using React Portals to handle z-index and layout issues effectively.",
+      "topic": "Advanced React",
+      "difficulty": "Medium",
+      "timeEstimate": "30–40 mins",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "status": "Not Started",
+      "learnPoints": [
+        "Using createPortal() API",
+        "Portal use cases (modals, tooltips)",
+        "DOM structure and event bubbling"
+      ],
+      "tip": "Portals don’t break the React event system — events still bubble through React’s hierarchy.",
+      "previewImg": "https://react.dev/images/docs/portals.png"
+    },
+    {
+      "id": "23",
+      "dayChallenge": "Day 23",
+      "title": "React Context API",
+      "shortDescription": "Share data without prop drilling.",
+      "longDescription": "Use the Context API to manage global state like theme or authentication. Create providers and consumers using useContext.",
+      "topic": "React - Context",
+      "difficulty": "Medium",
+      "timeEstimate": "30–40 mins",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "status": "Not Started",
+      "learnPoints": [
+        "Creating Context with createContext",
+        "Providing and consuming context values",
+        "Avoiding prop drilling"
+      ],
+      "tip": "For large apps, combine Context with useReducer for better structure.",
+      "previewImg": "https://react.dev/images/docs/context.png"
+    },
+    {
+      "id": "24",
+      "dayChallenge": "Day 24",
+      "title": "React Performance Optimization",
+      "shortDescription": "Make apps faster and smoother.",
+      "longDescription": "Optimize performance using memoization, key management, lazy loading, and developer tools.",
+      "topic": "Performance Optimization",
+      "difficulty": "Hard",
+      "timeEstimate": "40–45 mins",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "status": "Not Started",
+      "learnPoints": [
+        "React.memo and PureComponent",
+        "Virtualized lists for large data",
+        "Using React Profiler"
+      ],
+      "tip": "Focus on meaningful optimizations — profile before you optimize.",
+      "previewImg": "https://react.dev/images/docs/performance-optimization.png"
+    },
+    {
+      "id": "25",
+      "dayChallenge": "Day 25",
+      "title": "React Testing with RTL",
+      "shortDescription": "Write unit tests for components.",
+      "longDescription": "Learn the basics of testing React components using React Testing Library and Jest.",
+      "topic": "Testing",
+      "difficulty": "Hard",
+      "timeEstimate": "45–60 mins",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "status": "Not Started",
+      "learnPoints": [
+        "Rendering components with RTL",
+        "Simulating user events",
+        "Snapshot and unit testing"
+      ],
+      "tip": "Write tests that mimic user behavior — not implementation details.",
+      "previewImg": "https://testing-library.com/img/octopus-64x64.png"
+    },
+    {
+      "id": "26",
+      "dayChallenge": "Day 26",
+      "title": "Redux Basics",
+      "shortDescription": "Manage global state using Redux.",
+      "longDescription": "Set up Redux in a React app. Create actions, reducers, and connect components using the store.",
+      "topic": "Redux",
+      "difficulty": "Hard",
+      "timeEstimate": "50–60 mins",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
+      "status": "Not Started",
+      "learnPoints": [
+        "Redux store, reducers, actions",
+        "Dispatching actions and subscribing",
+        "Connecting components with useSelector/useDispatch"
+      ],
+      "tip": "Keep Redux state normalized — avoid deeply nested objects.",
+      "previewImg": "https://redux.js.org/img/redux-logo-landscape.png"
+    },
+    {
+      "id": "27",
+      "dayChallenge": "Day 27",
+      "title": "Redux Thunk for Async Actions",
+      "shortDescription": "Handle async data flows in Redux.",
+      "longDescription": "Use Redux Thunk middleware to handle async API calls and manage loading states effectively.",
+      "topic": "Redux - Async",
+      "difficulty": "Hard",
+      "timeEstimate": "50–60 mins",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
+      "status": "Not Started",
+      "learnPoints": [
+        "Async middleware with Thunk",
+        "Dispatching async actions",
+        "Error and loading management"
+      ],
+      "tip": "Keep async logic inside Thunk functions — reducers should stay pure.",
+      "previewImg": "https://redux.js.org/img/tutorials/thunk-flow.png"
+    },
+    {
+      "id": "28",
+      "dayChallenge": "Day 28",
+      "title": "React Suspense for Data Fetching",
+      "shortDescription": "Use Suspense for smoother data loading.",
+      "longDescription": "Explore React Suspense for managing data fetching and fallback UIs seamlessly.",
+      "topic": "Advanced React",
+      "difficulty": "Hard",
+      "timeEstimate": "45–50 mins",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "status": "Not Started",
+      "learnPoints": [
+        "Suspense with lazy and data loading",
+        "Fallback and boundary handling",
+        "Combining with concurrent features"
+      ],
+      "tip": "Suspense simplifies async UI — focus on loading states and transitions.",
+      "previewImg": "https://react.dev/images/docs/suspense.png"
+    },
+    {
+      "id": "29",
+      "dayChallenge": "Day 29",
+      "title": "React Deployment",
+      "shortDescription": "Deploy your React project to production.",
+      "longDescription": "Learn to build and deploy your React app using Vercel, Netlify, or GitHub Pages. Optimize builds for performance.",
+      "topic": "Deployment",
+      "difficulty": "Easy",
+      "timeEstimate": "20–30 mins",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "status": "Not Started",
+      "learnPoints": [
+        "Building React for production",
+        "Configuring routes for SPA",
+        "Deploying to Vercel/Netlify"
+      ],
+      "tip": "Always test your build locally before deploying to production.",
+      "previewImg": "https://vercel.com/_next/static/media/vercel-logotype-dark.5e3c2d2e.svg"
+    },
+    {
+      "id": "30",
+      "dayChallenge": "Day 30",
+      "title": "Final Project & Wrap-Up",
+      "shortDescription": "Combine everything you learned in one project.",
+      "longDescription": "Build a small complete app (like a Todo or Weather App) using everything you've learned — hooks, routing, context, and deployment.",
+      "topic": "React Project",
+      "difficulty": "Medium",
+      "timeEstimate": "60–90 mins",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "status": "Not Started",
+      "learnPoints": [
+        "Integrating multiple React concepts",
+        "Code organization and best practices",
+        "Deploying final project"
+      ],
+      "tip": "Don’t aim for perfection — focus on connecting all pieces confidently.",
+      "previewImg": "https://react.dev/images/docs/react-dev-tools.png"
+    }
+  ]
+}
