@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
-import EmailImage from "../../../assets/Images/ContactUs/Email.svg";
+import EmailImage from "../../assets/Images/ContactUs/Email.svg"
+
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
