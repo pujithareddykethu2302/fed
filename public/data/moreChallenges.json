@@ -1,0 +1,1337 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "React Fun Projects",
+      "color": "#563A9C",
+      "icon": "⚛️",
+      "description": "Hands-on React mini projects to strengthen your component and state logic.",
+
+    "challenges": [
+  {
+    "id": "challenge-01",
+    "title": "To-Do List App",
+    "shortDescription": "Build a simple task tracker with add and delete functionality.",
+    "longDescription": "Create a To-Do List app where users can add, mark complete, and delete tasks. This challenge helps understand React state management, lists rendering, and handling user interactions with controlled inputs.",
+    "topic": "React - State & Events",
+    "difficulty": "Easy",
+    "timeEstimate": "25–30 mins",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    "status": "Not Started",
+    "learnPoints": [
+      "Managing component state with useState",
+      "Rendering lists dynamically",
+      "Handling events in React"
+    ],
+    "tip": "Start small — focus first on adding tasks before handling delete or complete features."
+  },
+  {
+    "id": "challenge-02",
+    "title": "Weather App",
+    "shortDescription": "Fetch and display real-time weather using an API.",
+    "longDescription": "Build a weather app that fetches live weather data based on a city name using a public API like OpenWeatherMap. Learn how to work with async/await, handle loading states, and display data dynamically.",
+    "topic": "React - API Integration",
+    "difficulty": "Medium",
+    "timeEstimate": "40–50 mins",
+    "icon": "https://cdn-icons-png.flaticon.com/512/1116/1116453.png",
+    "status": "Not Started",
+    "learnPoints": [
+      "Fetching data using fetch or axios",
+      "Managing loading and error states",
+      "Handling form input and API calls"
+    ],
+    "tip": "Use async/await and try-catch to gracefully handle API errors."
+  },
+  {
+    "id": "challenge-03",
+    "title": "Quote Generator",
+    "shortDescription": "Display a random quote every time a button is clicked.",
+    "longDescription": "Create a fun quote generator that shows a new motivational quote when a user clicks a button. You’ll practice state updates, randomization logic, and simple UI interaction.",
+    "topic": "React - State & Rendering",
+    "difficulty": "Easy",
+    "timeEstimate": "20 mins",
+    "icon": "https://cdn-icons-png.flaticon.com/512/854/854894.png",
+    "status": "Not Started",
+    "learnPoints": [
+      "Updating state on user actions",
+      "Randomizing data from an array",
+      "Re-rendering components efficiently"
+    ],
+    "tip": "Store your quotes in an array and use Math.random() to pick one randomly."
+  },
+  {
+    "id": "challenge-04",
+    "title": "Expense Tracker",
+    "shortDescription": "Track daily expenses and visualize totals.",
+    "longDescription": "Build an expense tracker that lets users add income and expense records. Show total balance and category breakdowns. Learn state management and data filtering techniques.",
+    "topic": "React - State & Lists",
+    "difficulty": "Medium",
+    "timeEstimate": "45 mins",
+    "icon": "https://cdn-icons-png.flaticon.com/512/3593/3593523.png",
+    "status": "Not Started",
+    "learnPoints": [
+      "Using multiple states and derived values",
+      "Filtering and summing data",
+      "Formatting numbers and currency"
+    ],
+    "tip": "Start with simple input and output; add filtering or charting later."
+  },
+  {
+    "id": "challenge-05",
+    "title": "Countdown Timer",
+    "shortDescription": "Create a countdown timer for any event.",
+    "longDescription": "Users can set a date/time and see a real-time countdown. Learn how to use useEffect with timers and manage interval cleanup properly.",
+    "topic": "React - useEffect & Timers",
+    "difficulty": "Medium",
+    "timeEstimate": "30–40 mins",
+    "icon": "https://cdn-icons-png.flaticon.com/512/992/992700.png",
+    "status": "Not Started",
+    "learnPoints": [
+      "Using setInterval with React hooks",
+      "Cleaning up side effects",
+      "Calculating time differences dynamically"
+    ],
+    "tip": "Remember to clear the interval inside useEffect’s cleanup function."
+  },
+  {
+    "id": "challenge-06",
+    "title": "Movie Search App",
+    "shortDescription": "Search movies using a public movie API.",
+    "longDescription": "Create a movie search app using the OMDb or TMDB API. Learn how to handle search input, display results dynamically, and manage loading states.",
+    "topic": "React - API Calls & Forms",
+    "difficulty": "Medium",
+    "timeEstimate": "50 mins",
+    "icon": "https://cdn-icons-png.flaticon.com/512/1179/1179120.png",
+    "status": "Not Started",
+    "learnPoints": [
+      "Fetching data with parameters",
+      "Managing search input state",
+      "Displaying lists of dynamic data"
+    ],
+    "tip": "Debounce your search input for better performance."
+  },
+  {
+    "id": "challenge-07",
+    "title": "Quiz App",
+    "shortDescription": "Build a multiple-choice quiz app with scoring.",
+    "longDescription": "Create a quiz app that shows one question at a time, allows users to pick answers, and displays their score at the end. Great for practicing conditional rendering and logic.",
+    "topic": "React - Conditional Rendering",
+    "difficulty": "Medium",
+    "timeEstimate": "45 mins",
+    "icon": "https://cdn-icons-png.flaticon.com/512/3262/3262266.png",
+    "status": "Not Started",
+    "learnPoints": [
+      "Rendering content conditionally",
+      "Tracking user progress and score",
+      "Building multi-step interfaces"
+    ],
+    "tip": "Use an array of questions and track the current index."
+  },
+  {
+    "id": "challenge-08",
+    "title": "Image Gallery",
+    "shortDescription": "Showcase a responsive image gallery with grid layout.",
+    "longDescription": "Build an image gallery that displays photos in a responsive grid. Add hover effects or lightbox previews. Learn to map over data and create reusable UI components.",
+    "topic": "React - Lists & Reusability",
+    "difficulty": "Easy",
+    "timeEstimate": "25–30 mins",
+    "icon": "https://cdn-icons-png.flaticon.com/512/1829/1829583.png",
+    "status": "Not Started",
+    "learnPoints": [
+      "Mapping arrays to components",
+      "Styling responsive layouts",
+      "Using props for dynamic content"
+    ],
+    "tip": "You can fetch free images from Unsplash API for more realism."
+  },
+  {
+    "id": "challenge-09",
+    "title": "Notes App",
+    "shortDescription": "Create a simple note-taking app with local storage.",
+    "longDescription": "Build a notes app that allows users to write, edit, and delete notes. Persist them in localStorage so they stay after refreshing.",
+    "topic": "React - Local Storage",
+    "difficulty": "Medium",
+    "timeEstimate": "35–40 mins",
+    "icon": "https://cdn-icons-png.flaticon.com/512/1828/1828817.png",
+    "status": "Not Started",
+    "learnPoints": [
+      "Using localStorage in React",
+      "Managing CRUD operations",
+      "Persisting data across refreshes"
+    ],
+    "tip": "Always parse and stringify your localStorage data properly."
+  },
+  {
+    "id": "challenge-10",
+    "title": "Random Joke Generator",
+    "shortDescription": "Get a new joke with every button click.",
+    "longDescription": "Create an app that fetches a random joke from a joke API. Learn to use fetch and update UI instantly after API calls.",
+    "topic": "React - API Integration",
+    "difficulty": "Easy",
+    "timeEstimate": "20–25 mins",
+    "icon": "https://cdn-icons-png.flaticon.com/512/616/616408.png",
+    "status": "Not Started",
+    "learnPoints": [
+      "API calls and async/await",
+      "State updates on click events",
+      "Error handling in React"
+    ],
+    "tip": "Add a loading spinner for a smoother experience."
+  },
+  {
+    "id": "challenge-11",
+    "title": "Color Picker Tool",
+    "shortDescription": "Create a tool to pick and copy hex colors.",
+    "longDescription": "Build a fun color picker where users can select a color and copy its hex code. Explore useState and DOM interactions.",
+    "topic": "React - Forms & Inputs",
+    "difficulty": "Easy",
+    "timeEstimate": "20–25 mins",
+    "icon": "https://cdn-icons-png.flaticon.com/512/685/685682.png",
+    "status": "Not Started",
+    "learnPoints": [
+      "Handling input events",
+      "Dynamic style updates",
+      "Clipboard copy interactions"
+    ],
+    "tip": "Use input type='color' for native color picker support."
+  },
+  {
+    "id": "challenge-12",
+    "title": "Music Player",
+    "shortDescription": "A mini player to play, pause, and skip songs.",
+    "longDescription": "Create a simple React music player that plays audio files from a list. Practice refs, event handling, and conditional rendering.",
+    "topic": "React - Refs & Events",
+    "difficulty": "Medium",
+    "timeEstimate": "45–60 mins",
+    "icon": "https://cdn-icons-png.flaticon.com/512/727/727245.png",
+    "status": "Not Started",
+    "learnPoints": [
+      "Using useRef for DOM access",
+      "Managing play/pause state",
+      "Rendering UI conditionally"
+    ],
+    "tip": "Use HTML audio tag with React refs for easy control."
+  },
+  {
+    "id": "challenge-13",
+    "title": "Pomodoro Timer",
+    "shortDescription": "Build a timer to boost productivity with work/break intervals.",
+    "longDescription": "Implement a Pomodoro Timer that lets users start, pause, and reset sessions. Learn time calculations, interval management, and state transitions.",
+    "topic": "React - useEffect & Timers",
+    "difficulty": "Medium",
+    "timeEstimate": "45 mins",
+    "icon": "https://cdn-icons-png.flaticon.com/512/809/809952.png",
+    "status": "Not Started",
+    "learnPoints": [
+      "Working with timers",
+      "State and interval cleanup",
+      "Dynamic button behavior"
+    ],
+    "tip": "Keep your timer logic inside a useEffect for clean re-renders."
+  },
+  {
+    "id": "challenge-14",
+    "title": "BMI Calculator",
+    "shortDescription": "Calculate and display Body Mass Index results.",
+    "longDescription": "Create a BMI calculator that takes height and weight input and displays BMI and status. Learn controlled forms and conditional display logic.",
+    "topic": "React - Forms & State",
+    "difficulty": "Easy",
+    "timeEstimate": "25 mins",
+    "icon": "https://cdn-icons-png.flaticon.com/512/1047/1047711.png",
+    "status": "Not Started",
+    "learnPoints": [
+      "Handling user inputs",
+      "Performing calculations",
+      "Conditional UI rendering"
+    ],
+    "tip": "Add color-coded feedback for underweight/normal/overweight."
+  }
+]
+
+    },
+   {
+  "id": 2,
+  "name": "JavaScript Logic Challenges",
+  "color": "#8E6CF2",
+  "icon": "🧩",
+  "description": "Pure JavaScript logic challenges to sharpen fundamentals.",
+  "challenges": [
+    {
+      "id": 1,
+      "title": "Palindrome Checker",
+      "shortDescription": "Check if a word or phrase reads the same backward and forward.",
+      "longDescription": "Write a function that checks if a given string is a palindrome. Ignore casing, spaces, and punctuation. This challenge builds confidence in working with strings and loops or array methods like split, reverse, and join.",
+      "topic": "Strings & Conditionals",
+      "difficulty": "Easy",
+      "timeEstimate": "10–15 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/3917/3917215.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "String cleaning and normalization",
+        "Using split(), reverse(), and join()",
+        "Condition checking"
+      ],
+      "tip": "Use regex or replace() to remove spaces and punctuation before checking."
+    },
+    {
+      "id": 2,
+      "title": "Anagram Finder",
+      "shortDescription": "Check if two words are anagrams of each other.",
+      "longDescription": "Create a function that takes two strings and returns true if they contain the same letters in any order. You'll explore sorting strings and comparing them effectively.",
+      "topic": "Strings & Sorting",
+      "difficulty": "Easy",
+      "timeEstimate": "15–20 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/3208/3208707.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Sorting and comparing arrays",
+        "Normalizing case and whitespace",
+        "Understanding object frequency maps"
+      ],
+      "tip": "Try converting strings to lowercase and sort characters alphabetically before comparing."
+    },
+    {
+      "id": 3,
+      "title": "FizzBuzz",
+      "shortDescription": "Print numbers with Fizz/Buzz pattern logic.",
+      "longDescription": "Classic interview question! Print numbers from 1 to 100. For multiples of 3 print 'Fizz', for 5 print 'Buzz', and for both print 'FizzBuzz'.",
+      "topic": "Loops & Conditionals",
+      "difficulty": "Easy",
+      "timeEstimate": "10 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/2907/2907316.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Loop iteration",
+        "Conditional chaining",
+        "Console output"
+      ],
+      "tip": "Use modulo (%) operator to check divisibility by 3 and 5."
+    },
+    {
+      "id": 4,
+      "title": "Array Chunking",
+      "shortDescription": "Split an array into smaller groups of given size.",
+      "longDescription": "Write a function that divides an array into subarrays (chunks) of a specific length. Helps understand array slicing and loops effectively.",
+      "topic": "Arrays & Loops",
+      "difficulty": "Medium",
+      "timeEstimate": "20 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/892/892498.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Looping through arrays",
+        "Using slice() method",
+        "Pushing nested arrays"
+      ],
+      "tip": "Try using a for loop that increments by chunk size each iteration."
+    },
+    {
+      "id": 5,
+      "title": "Flatten Nested Arrays",
+      "shortDescription": "Convert a nested array into a single flat array.",
+      "longDescription": "Write a function that flattens deeply nested arrays into one single array. Learn recursion or use modern array methods like flat().",
+      "topic": "Recursion & Arrays",
+      "difficulty": "Medium",
+      "timeEstimate": "25–30 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/6945/6945155.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Recursive thinking",
+        "Array.concat() and reduce() usage",
+        "Understanding ES6 flat()"
+      ],
+      "tip": "If recursion is confusing, start with one-level flattening using concat()."
+    },
+    {
+      "id": 6,
+      "title": "Find the Missing Number",
+      "shortDescription": "Detect the missing number in a sequence.",
+      "longDescription": "Given an array of numbers from 1 to n with one missing, find which number is missing. Strengthen loop logic and arithmetic formula knowledge.",
+      "topic": "Math Logic & Arrays",
+      "difficulty": "Medium",
+      "timeEstimate": "25 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Sum formula (n*(n+1)/2)",
+        "Reducing array values",
+        "Problem-solving patterns"
+      ],
+      "tip": "Subtract the sum of array elements from the expected sum of numbers 1..n."
+    },
+    {
+      "id": 7,
+      "title": "Count Vowels",
+      "shortDescription": "Count vowels in a given string.",
+      "longDescription": "Write a function that counts the number of vowels (a, e, i, o, u) in a string. This improves iteration and conditional logic skills.",
+      "topic": "Strings & Loops",
+      "difficulty": "Easy",
+      "timeEstimate": "10 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/599/599216.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Looping over strings",
+        "Using includes() or regex",
+        "String normalization"
+      ],
+      "tip": "Use a regex like /[aeiou]/gi for cleaner implementation."
+    },
+    {
+      "id": 8,
+      "title": "Find the Longest Word",
+      "shortDescription": "Return the longest word in a given sentence.",
+      "longDescription": "Split a sentence into words and find which one is the longest. Learn to manipulate arrays and use reduce effectively.",
+      "topic": "Strings & Arrays",
+      "difficulty": "Easy",
+      "timeEstimate": "15 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/5149/5149618.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Splitting strings into arrays",
+        "Using reduce() for comparison",
+        "String length property"
+      ],
+      "tip": "Try sorting by word length to find the longest one quickly."
+    },
+    {
+      "id": 9,
+      "title": "Capitalize Each Word",
+      "shortDescription": "Transform the first letter of every word to uppercase.",
+      "longDescription": "Build a function that converts a string like 'hello world' → 'Hello World'. You’ll understand string splitting, mapping, and joining.",
+      "topic": "Strings & Map()",
+      "difficulty": "Easy",
+      "timeEstimate": "15–20 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/1683/1683781.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Using map() and join()",
+        "Character manipulation",
+        "Template literals"
+      ],
+      "tip": "Remember to lowercase the rest of the word for consistency."
+    },
+    {
+      "id": 10,
+      "title": "Array Intersection",
+      "shortDescription": "Find common elements between two arrays.",
+      "longDescription": "Create a function that takes two arrays and returns a new array with elements found in both. You’ll understand filtering and includes() method well.",
+      "topic": "Arrays & Filtering",
+      "difficulty": "Medium",
+      "timeEstimate": "20–25 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/3388/3388658.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Using filter() and includes()",
+        "Set operations logic",
+        "Optimizing comparisons"
+      ],
+      "tip": "Use Set to make comparisons faster for large arrays."
+    },
+    {
+      "id": 11,
+      "title": "Sum of Digits",
+      "shortDescription": "Find the sum of all digits in a number.",
+      "longDescription": "Write a function that takes a number like 1234 and returns 10. Helps practice type conversion and loops.",
+      "topic": "Math & Strings",
+      "difficulty": "Easy",
+      "timeEstimate": "10–15 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/1312/1312307.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Converting numbers to strings",
+        "Iterating over characters",
+        "Type coercion back to numbers"
+      ],
+      "tip": "Use reduce() to sum digits after splitting the string."
+    },
+    {
+      "id": 12,
+      "title": "Reverse Integer",
+      "shortDescription": "Reverse the digits of an integer.",
+      "longDescription": "Given a number, return it reversed. Example: 123 → 321, -456 → -654. Learn handling strings and edge cases like negatives.",
+      "topic": "Numbers & Strings",
+      "difficulty": "Medium",
+      "timeEstimate": "20 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/931/931949.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "String conversion techniques",
+        "Handling negatives",
+        "Mathematical thinking"
+      ],
+      "tip": "Convert to string → reverse → convert back to number."
+    },
+    {
+      "id": 13,
+      "title": "Factorial Finder",
+      "shortDescription": "Calculate the factorial of a number using recursion or loops.",
+      "longDescription": "Build a factorial function (n!) using recursion or a for loop. Great for practicing function calls and understanding base cases.",
+      "topic": "Recursion & Loops",
+      "difficulty": "Medium",
+      "timeEstimate": "25 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/1786/1786978.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Recursive logic",
+        "Base case understanding",
+        "Loop iteration patterns"
+      ],
+      "tip": "Start with an iterative solution, then refactor it to recursion."
+    },
+    {
+      "id": 14,
+      "title": "Count Occurrences",
+      "shortDescription": "Count how many times each element appears in an array.",
+      "longDescription": "Return an object showing frequency of each element. Example: ['a','b','a'] → {a:2,b:1}. Learn object-based counting patterns.",
+      "topic": "Objects & Loops",
+      "difficulty": "Medium",
+      "timeEstimate": "25 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968292.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Using objects as hash maps",
+        "Looping with forEach()",
+        "Conditional key checks"
+      ],
+      "tip": "Initialize counts using result[element] = (result[element] || 0) + 1."
+    },
+    {
+      "id": 15,
+      "title": "Find Duplicates",
+      "shortDescription": "Detect duplicates inside an array.",
+      "longDescription": "Write a function that returns duplicate elements from an array. Learn about sets, filtering, and memory-efficient comparison.",
+      "topic": "Arrays & Sets",
+      "difficulty": "Medium",
+      "timeEstimate": "25 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/1828/1828817.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Using Set for uniqueness",
+        "Array.filter() logic",
+        "Understanding complexity"
+      ],
+      "tip": "Track seen elements in a Set for efficient duplicate detection."
+    },
+    {
+      "id": 16,
+      "title": "Flatten Object",
+      "shortDescription": "Convert nested objects into a single level with dot keys.",
+      "longDescription": "Take an object like {a:{b:{c:1}}} → {'a.b.c':1}. Practice recursion and object traversal.",
+      "topic": "Objects & Recursion",
+      "difficulty": "Hard",
+      "timeEstimate": "40–50 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/2933/2933245.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Recursive object traversal",
+        "Building dynamic keys",
+        "Handling nested structures"
+      ],
+      "tip": "Pass current key path as a parameter in recursive calls."
+    },
+    {
+      "id": 17,
+      "title": "Validate Parentheses",
+      "shortDescription": "Check if parentheses in a string are balanced.",
+      "longDescription": "Given a string like '(())' or '(()', determine if parentheses are balanced. Learn about stacks and loop-based validation.",
+      "topic": "Stacks & Strings",
+      "difficulty": "Medium",
+      "timeEstimate": "30 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/2436/2436743.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Using stacks in JS arrays",
+        "Push/pop operations",
+        "Conditional logic"
+      ],
+      "tip": "Push '(' and pop ')' — if stack isn’t empty at end, it’s invalid."
+    },
+    {
+      "id": 18,
+      "title": "Array Rotation",
+      "shortDescription": "Rotate an array k times to the right.",
+      "longDescription": "Move elements right by k steps. Example: [1,2,3,4,5], k=2 → [4,5,1,2,3]. Great for practicing array manipulation.",
+      "topic": "Arrays & Indexing",
+      "difficulty": "Medium",
+      "timeEstimate": "25 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/2089/2089670.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Slicing arrays",
+        "Modulo arithmetic",
+        "Concatenation logic"
+      ],
+      "tip": "Use slice(-k) and concat to rotate cleanly."
+    },
+    {
+      "id": 19,
+      "title": "Roman Numeral Converter",
+      "shortDescription": "Convert numbers into Roman numerals.",
+      "longDescription": "Convert numbers like 9 → IX or 58 → LVIII. You’ll understand mapping logic and string concatenation loops.",
+      "topic": "Math & Mapping",
+      "difficulty": "Hard",
+      "timeEstimate": "40 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/3721/3721630.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Mapping numbers to symbols",
+        "Looping and subtraction logic",
+        "String concatenation patterns"
+      ],
+      "tip": "Work from largest Roman symbol downward."
+    }
+  ]
+},
+
+   {
+  "id": 3,
+  "name": "API-Based Projects",
+  "color": "#E5E2F5",
+  "icon": "🌐",
+  "description": "Practice fetching and displaying live data from APIs.",
+
+  "challenges": [
+    {
+      "id": 301,
+      "title": "Weather Forecast App",
+      "shortDescription": "Fetch real-time weather details using an external API.",
+      "longDescription": "Build an app that allows users to search for a city and view its current weather, temperature, humidity, and forecast using APIs like OpenWeatherMap. You’ll learn to handle API requests, manage states, and display data beautifully on the UI.",
+      "topic": "API Fetch & UI Integration",
+      "difficulty": "Easy",
+      "timeEstimate": "30–45 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/1163/1163661.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Fetch API basics",
+        "Handling JSON data",
+        "Dynamic UI updates"
+      ],
+      "tip": "Always handle API errors for invalid city names or network issues."
+    },
+    {
+      "id": 302,
+      "title": "Movie Search Engine",
+      "shortDescription": "Search and display movie details using OMDb or TMDB API.",
+      "longDescription": "Create a movie search application that fetches data like movie titles, posters, ratings, and release years from a public movie API. You’ll learn to manage API keys securely and render API data dynamically.",
+      "topic": "API Calls & Search Functionality",
+      "difficulty": "Medium",
+      "timeEstimate": "45–60 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/3106/3106921.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Working with external APIs",
+        "Using search queries",
+        "Handling loading and error states"
+      ],
+      "tip": "Add debounce to your search input to reduce unnecessary API calls."
+    },
+    {
+      "id": 303,
+      "title": "Crypto Tracker Dashboard",
+      "shortDescription": "Track live cryptocurrency prices using CoinGecko or Binance API.",
+      "longDescription": "Build a real-time dashboard displaying cryptocurrency prices, market caps, and 24h changes. You’ll understand periodic API calls, data formatting, and updating UI with live data.",
+      "topic": "Real-time Data Fetching",
+      "difficulty": "Medium",
+      "timeEstimate": "60–90 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/841/841364.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Working with live data",
+        "Formatting numbers and currencies",
+        "Using setInterval for updates"
+      ],
+      "tip": "Use `Intl.NumberFormat` for better currency formatting."
+    },
+    {
+      "id": 304,
+      "title": "GitHub Profile Finder",
+      "shortDescription": "Get user details and repositories using GitHub’s public API.",
+      "longDescription": "Create an app where users can search for any GitHub username and view their profile details, followers, and repositories. Perfect for learning how to fetch nested API data and visualize profiles.",
+      "topic": "API Pagination & Data Display",
+      "difficulty": "Medium",
+      "timeEstimate": "45 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/733/733609.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Working with nested JSON",
+        "Handling loading states",
+        "Using GitHub REST API"
+      ],
+      "tip": "Try adding pagination for repositories using GitHub’s pagination parameters."
+    },
+    {
+      "id": 305,
+      "title": "Recipe Finder App",
+      "shortDescription": "Find delicious recipes using ingredients via Spoonacular API.",
+      "longDescription": "Allow users to input ingredients and fetch recipes with instructions, images, and nutrition info. This project strengthens your skills in handling API responses and creating user-friendly recipe UIs.",
+      "topic": "API Query Parameters",
+      "difficulty": "Medium",
+      "timeEstimate": "45–60 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/706/706195.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Working with query params",
+        "Rendering lists dynamically",
+        "Managing multiple API calls"
+      ],
+      "tip": "Display a loading spinner while fetching recipes for better UX."
+    },
+    {
+      "id": 306,
+      "title": "Random Quote Generator",
+      "shortDescription": "Fetch and display random motivational quotes.",
+      "longDescription": "Build a small app that fetches a new quote each time a button is clicked. You’ll learn API fetching, state updates, and simple animations for dynamic content.",
+      "topic": "Basic Fetching & UI Update",
+      "difficulty": "Easy",
+      "timeEstimate": "15–20 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/564/564619.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Understanding fetch API",
+        "Rendering text dynamically",
+        "Event handling"
+      ],
+      "tip": "Use a fade animation when updating the quote."
+    },
+    {
+      "id": 307,
+      "title": "News Reader App",
+      "shortDescription": "Display trending news using NewsAPI or GNews.",
+      "longDescription": "Build a news portal that lists trending articles with headlines, sources, and images. Users can filter by category or keyword, improving your knowledge of query parameters and UI layouts.",
+      "topic": "Filtering & Pagination",
+      "difficulty": "Medium",
+      "timeEstimate": "60 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/2920/2920253.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Handling multiple API queries",
+        "Dynamic category filters",
+        "Responsive layouts"
+      ],
+      "tip": "Display timestamps using readable date formats."
+    },
+    {
+      "id": 308,
+      "title": "NASA Picture of the Day",
+      "shortDescription": "Display daily space photos from NASA’s open API.",
+      "longDescription": "Use NASA’s Astronomy Picture of the Day API to fetch fascinating space images and their descriptions. It’s a great project to practice fetching and formatting data with keys and dates.",
+      "topic": "Public API Integration",
+      "difficulty": "Easy",
+      "timeEstimate": "30 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/3212/3212608.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Using API keys",
+        "Working with date parameters",
+        "Displaying media dynamically"
+      ],
+      "tip": "Allow users to select a custom date to fetch that day’s picture."
+    },
+    {
+      "id": 309,
+      "title": "Dictionary App",
+      "shortDescription": "Fetch definitions, synonyms, and examples for words.",
+      "longDescription": "Build a dictionary where users can type a word to get its meaning, part of speech, and example usage. Use a free dictionary API to practice data rendering and conditional UI updates.",
+      "topic": "Conditional Rendering",
+      "difficulty": "Easy",
+      "timeEstimate": "25–35 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/4781/4781517.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Handling missing data",
+        "Rendering text-based responses",
+        "Improving user input handling"
+      ],
+      "tip": "Show a friendly message if a word is not found."
+    },
+    {
+      "id": 310,
+      "title": "Joke Generator App",
+      "shortDescription": "Get random jokes from JokeAPI and display them with fun UI.",
+      "longDescription": "A simple yet fun project where users can click a button to fetch and read random jokes. Great for learning API basics, button interactions, and smooth transitions.",
+      "topic": "API Basics",
+      "difficulty": "Easy",
+      "timeEstimate": "20 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/3050/3050140.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Fetching APIs",
+        "DOM or React state updates",
+        "UI interaction"
+      ],
+      "tip": "Add a laugh emoji animation after showing each joke!"
+    },
+    {
+      "id": 311,
+      "title": "Currency Converter",
+      "shortDescription": "Convert currencies using ExchangeRate or Frankfurter API.",
+      "longDescription": "Create a converter where users can choose two currencies and get the live conversion rate. A perfect project for understanding inputs, dropdowns, and real-time API data.",
+      "topic": "Dynamic Inputs & Fetch",
+      "difficulty": "Medium",
+      "timeEstimate": "40–50 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/2331/2331944.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Dropdown input handling",
+        "Formatting currency data",
+        "Error handling"
+      ],
+      "tip": "Use flag icons for visual currency selectors."
+    },
+    {
+      "id": 312,
+      "title": "Book Finder App",
+      "shortDescription": "Find books using Google Books API.",
+      "longDescription": "Build a book search interface that displays covers, titles, and authors. Practice query string usage and conditional rendering for missing data.",
+      "topic": "Search & API Integration",
+      "difficulty": "Medium",
+      "timeEstimate": "45 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/3317/3317689.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Using query strings",
+        "Displaying API data in cards",
+        "Handling null values"
+      ],
+      "tip": "Use skeleton loaders while fetching data."
+    },
+    {
+      "id": 313,
+      "title": "IP Location Tracker",
+      "shortDescription": "Get geographical location data from IP address.",
+      "longDescription": "Build an app where users enter an IP to get country, city, timezone, and map view using APIs like ipify or ipapi. Strengthens API chaining and map integration skills.",
+      "topic": "API Chaining",
+      "difficulty": "Hard",
+      "timeEstimate": "75 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/684/684908.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Working with multiple APIs",
+        "Map integrations (Leaflet/Google Maps)",
+        "Error handling"
+      ],
+      "tip": "Add automatic IP detection for user’s own location."
+    },
+    {
+      "id": 314,
+      "title": "AI Image Generator",
+      "shortDescription": "Generate images using an AI API like Unsplash or OpenAI.",
+      "longDescription": "Create an app where users can type prompts to generate or fetch AI-generated images. You’ll explore advanced APIs, image grids, and error handling.",
+      "topic": "Advanced API Integration",
+      "difficulty": "Hard",
+      "timeEstimate": "90 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/1048/1048949.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "POST requests with JSON body",
+        "Async/await flow",
+        "Error boundaries"
+      ],
+      "tip": "Display image loading shimmer placeholders."
+    },
+    {
+      "id": 315,
+      "title": "Spotify Song Search Clone",
+      "shortDescription": "Search and play previews of songs using Spotify API.",
+      "longDescription": "Integrate Spotify’s API to build a mini music browser. Users can search songs, see artist info, and play previews. Focuses on API authorization and audio element control.",
+      "topic": "OAuth & API Calls",
+      "difficulty": "Hard",
+      "timeEstimate": "90–120 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/174/174872.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Using OAuth tokens",
+        "Audio playback control",
+        "Fetching large data"
+      ],
+      "tip": "Cache API responses to reduce load times."
+    },
+    {
+      "id": 316,
+      "title": "AI Chat App",
+      "shortDescription": "Build an interactive chatbot using OpenAI API.",
+      "longDescription": "Create a simple chat UI where users can type questions and get intelligent answers using an AI API. Perfect to learn POST requests, managing chat states, and rendering lists dynamically.",
+      "topic": "AI Integration & UI",
+      "difficulty": "Hard",
+      "timeEstimate": "2 hrs",
+      "icon": "https://cdn-icons-png.flaticon.com/512/4712/4712109.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Handling streaming responses",
+        "POST requests",
+        "Dynamic UI rendering"
+      ],
+      "tip": "Use a typing animation to mimic real chat behavior."
+    },
+    {
+      "id": 317,
+      "title": "Unsplash Image Gallery",
+      "shortDescription": "Create an image search app using Unsplash API.",
+      "longDescription": "Fetch and display high-quality photos from Unsplash. Learn pagination, search filters, and grid layouts with responsive design.",
+      "topic": "Pagination & Layout",
+      "difficulty": "Medium",
+      "timeEstimate": "50 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/3062/3062634.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "API key usage",
+        "Infinite scrolling",
+        "Responsive grids"
+      ],
+      "tip": "Implement lazy loading for performance."
+    },
+    {
+      "id": 318,
+      "title": "YouTube Video Explorer",
+      "shortDescription": "Search and embed videos using YouTube Data API.",
+      "longDescription": "Build a simple YouTube explorer that lets users search and play embedded videos. You’ll learn about API quotas, pagination, and iframe embedding.",
+      "topic": "Video Embedding & Fetching",
+      "difficulty": "Hard",
+      "timeEstimate": "90 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/1384/1384060.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Working with media APIs",
+        "Handling pagination tokens",
+        "Embedding content securely"
+      ],
+      "tip": "Use `react-player` for cleaner embedding."
+    },
+    {
+      "id": 319,
+      "title": "Country Info Explorer",
+      "shortDescription": "View details of countries using REST Countries API.",
+      "longDescription": "Show country details like population, capital, flag, and region. Add a search bar or filter by continent to improve interactivity.",
+      "topic": "Data Display & Filtering",
+      "difficulty": "Easy",
+      "timeEstimate": "30–40 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/197/197484.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Fetching and rendering data",
+        "Filtering lists",
+        "Using flags and symbols"
+      ],
+      "tip": "Add a dark mode for better aesthetics."
+    },
+    {
+      "id": 320,
+      "title": "Public Holidays Finder",
+      "shortDescription": "Find holidays by country and year using Calendarific API.",
+      "longDescription": "Build an app that lists national holidays for any country and year. You’ll learn about date formatting, dropdowns, and API parameters.",
+      "topic": "API Query Parameters",
+      "difficulty": "Medium",
+      "timeEstimate": "45 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/2921/2921822.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Working with dates",
+        "Dynamic dropdowns",
+        "Displaying lists"
+      ],
+      "tip": "Display holidays in a calendar-style layout."
+    }
+  ]
+},
+    {
+  "id": 4,
+  "name": "React + Advanced Hooks",
+  "color": "#C4B5FD",
+  "icon": "🪝",
+  "description": "Deep dive into advanced React patterns and hooks.",
+  "challenges": [
+    {
+      "id": "4.1",
+      "title": "Custom Hook for Fetching Data",
+      "shortDescription": "Create a reusable custom hook for fetching APIs efficiently.",
+      "longDescription": "Build a custom hook named `useFetch` that can fetch data from any given URL and handle loading and error states. You’ll learn abstraction and reusability of logic using custom hooks instead of repeating code in multiple components.",
+      "topic": "Custom Hooks & Data Fetching",
+      "difficulty": "Easy",
+      "timeEstimate": "30 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/5578/5578745.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Custom hook creation",
+        "useEffect and dependency management",
+        "Error and loading state handling"
+      ],
+      "tip": "Return `{ data, loading, error }` from the hook for flexible use in different components."
+    },
+    {
+      "id": "4.2",
+      "title": "Theme Switcher with Context API",
+      "shortDescription": "Implement global light/dark mode using Context and useContext.",
+      "longDescription": "Build a global theme switcher that allows toggling between light and dark mode using React Context. You’ll understand how to manage and share state across deeply nested components.",
+      "topic": "Context API & Global State",
+      "difficulty": "Easy",
+      "timeEstimate": "35–45 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/3073/3073665.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Creating and providing context",
+        "Consuming context with useContext",
+        "Persisting theme preference in localStorage"
+      ],
+      "tip": "Store user’s theme preference in localStorage so it persists across reloads."
+    },
+    {
+      "id": "4.3",
+      "title": "Form State Management with useReducer",
+      "shortDescription": "Handle complex form state using useReducer instead of multiple useStates.",
+      "longDescription": "Build a registration form where all form fields (name, email, password) are managed via `useReducer`. You’ll learn to organize state transitions more cleanly for large-scale forms.",
+      "topic": "useReducer & Form Management",
+      "difficulty": "Medium",
+      "timeEstimate": "50 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/3472/3472620.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Defining reducers and actions",
+        "State transitions in React",
+        "Simplifying complex forms"
+      ],
+      "tip": "Define an initialState object and switch-based reducer for clarity."
+    },
+    {
+      "id": "4.4",
+      "title": "Debounced Search with useEffect and useRef",
+      "shortDescription": "Implement search input that fetches data only after user stops typing.",
+      "longDescription": "Build a movie or product search component where the API call triggers only after the user stops typing for 500ms. You’ll explore performance optimization using `useEffect`, `useRef`, and cleanup functions.",
+      "topic": "useEffect & Performance",
+      "difficulty": "Medium",
+      "timeEstimate": "40–50 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/2939/2939619.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Debouncing API calls",
+        "Using useRef for timers",
+        "Cleaning up effects"
+      ],
+      "tip": "Use `setTimeout` and clear it in cleanup to achieve smooth debouncing."
+    },
+    {
+      "id": "4.5",
+      "title": "Local Storage Manager Hook",
+      "shortDescription": "Create a custom hook that syncs React state with localStorage.",
+      "longDescription": "Develop a `useLocalStorage` hook to persist and retrieve user preferences. It improves UX by storing data even after reloads and teaches you how to combine `useEffect` and `useState` efficiently.",
+      "topic": "Persistence & Custom Hooks",
+      "difficulty": "Easy",
+      "timeEstimate": "25–35 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/1802/1802973.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Syncing localStorage with React state",
+        "Using JSON parse/stringify safely",
+        "Building reusable logic"
+      ],
+      "tip": "Always check if localStorage contains data before setting defaults."
+    },
+    {
+      "id": "4.6",
+      "title": "Infinite Scroll with useRef and Intersection Observer",
+      "shortDescription": "Load more content automatically as the user scrolls down.",
+      "longDescription": "Create an infinite scroll component that loads more data when the user reaches the bottom. You’ll learn how to use `useRef` with Intersection Observer API to detect element visibility.",
+      "topic": "Scroll Detection & useRef",
+      "difficulty": "Hard",
+      "timeEstimate": "90 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/3039/3039436.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Handling lazy loading",
+        "Using Intersection Observer",
+        "Managing scroll-based updates"
+      ],
+      "tip": "Throttle updates to avoid overloading the API with too many calls."
+    },
+    {
+      "id": "4.7",
+      "title": "Modal Component with usePortal",
+      "shortDescription": "Build a reusable modal that uses React Portals for rendering.",
+      "longDescription": "Create a modal that renders outside the root DOM tree using portals. This challenge teaches how to use `ReactDOM.createPortal` and manage visibility state elegantly.",
+      "topic": "React Portals & useState",
+      "difficulty": "Medium",
+      "timeEstimate": "50–60 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/2040/2040946.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Portal rendering",
+        "Reusability patterns",
+        "Backdrop click handling"
+      ],
+      "tip": "Use `useEffect` to close the modal on Escape key press."
+    },
+    {
+      "id": "4.8",
+      "title": "Drag and Drop with useRef",
+      "shortDescription": "Implement drag-and-drop sorting using hooks and refs.",
+      "longDescription": "Build a draggable list using `useRef` and mouse events. You’ll learn DOM manipulation, handling drag events, and updating state dynamically with modern React patterns.",
+      "topic": "DOM Manipulation & Refs",
+      "difficulty": "Hard",
+      "timeEstimate": "80–90 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/4834/4834552.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Handling DOM references",
+        "Updating list order",
+        "Smooth animations"
+      ],
+      "tip": "Use CSS transitions for smoother reordering animations."
+    },
+    {
+      "id": "4.9",
+      "title": "Online/Offline Detector Hook",
+      "shortDescription": "Detect internet connection changes using a custom hook.",
+      "longDescription": "Create a custom hook `useNetworkStatus` that listens for browser online/offline events. Display a toast or banner when the network status changes.",
+      "topic": "Event Listeners & Custom Hooks",
+      "difficulty": "Easy",
+      "timeEstimate": "25 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/871/871366.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Listening to window events",
+        "Cleanup with useEffect",
+        "Real-time status updates"
+      ],
+      "tip": "Return a boolean value so it’s reusable in multiple components."
+    },
+    {
+      "id": "4.10",
+      "title": "Clipboard Manager Hook",
+      "shortDescription": "Copy and manage clipboard data using React hooks.",
+      "longDescription": "Build a custom `useClipboard` hook that lets users copy text to clipboard and show a confirmation message. You’ll learn interacting with the browser Clipboard API using hooks.",
+      "topic": "Browser API + Hooks",
+      "difficulty": "Medium",
+      "timeEstimate": "35 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/1828/1828765.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Working with navigator.clipboard",
+        "State synchronization",
+        "Timeout management"
+      ],
+      "tip": "Use `setTimeout` to reset copied status after a few seconds."
+    },
+    {
+      "id": "4.11",
+      "title": "Stopwatch with useReducer and useRef",
+      "shortDescription": "Create a precise stopwatch using useReducer and useRef.",
+      "longDescription": "Develop a stopwatch with start, stop, and reset functionality. Use `useReducer` for time state and `useRef` to store the timer ID without causing re-renders.",
+      "topic": "Timing & State Management",
+      "difficulty": "Medium",
+      "timeEstimate": "60 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/3601/3601601.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "State transitions using reducer",
+        "useRef for mutable values",
+        "Controlling re-renders"
+      ],
+      "tip": "Use Date.now() for accurate elapsed time calculation."
+    },
+    {
+      "id": "4.12",
+      "title": "Undo/Redo State Manager",
+      "shortDescription": "Build an undo-redo system using useReducer and history tracking.",
+      "longDescription": "Create an app where users can undo or redo their actions (like drawing or editing text). You’ll explore advanced reducer patterns and immutable state updates.",
+      "topic": "Complex Reducers",
+      "difficulty": "Hard",
+      "timeEstimate": "90 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/1828/1828911.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Reducer state history",
+        "Undo/redo implementation",
+        "Performance optimization"
+      ],
+      "tip": "Store past, present, and future states in your reducer."
+    },
+    {
+      "id": "4.13",
+      "title": "Custom usePrevious Hook",
+      "shortDescription": "Track and compare previous state or prop values.",
+      "longDescription": "Build a simple yet powerful `usePrevious` hook that stores and returns the previous value of any variable. You’ll understand how refs can persist data between renders.",
+      "topic": "Refs & Value Tracking",
+      "difficulty": "Easy",
+      "timeEstimate": "20 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/833/833472.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "useRef for previous value storage",
+        "useEffect dependency tracking",
+        "Avoiding unnecessary re-renders"
+      ],
+      "tip": "Always update the ref after returning the old value."
+    },
+    {
+      "id": "4.14",
+      "title": "Scroll-to-Top Button Hook",
+      "shortDescription": "Show a floating button when user scrolls down the page.",
+      "longDescription": "Create a hook `useScrollPosition` to detect scroll position and show a button that scrolls the window smoothly to the top. Great for understanding window events and performance control.",
+      "topic": "Scroll Events & Effects",
+      "difficulty": "Medium",
+      "timeEstimate": "35–45 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/906/906343.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Window event listeners",
+        "Throttling scroll handlers",
+        "Smooth scrolling behavior"
+      ],
+      "tip": "Use `window.scrollTo({ top: 0, behavior: 'smooth' })` for better UX."
+    },
+    {
+      "id": "4.15",
+      "title": "Tabs Component with useState & useEffect",
+      "shortDescription": "Build a tabbed interface that remembers the last active tab.",
+      "longDescription": "Develop a tab component with localStorage memory, so the user’s last active tab stays selected even after refreshing. It’s a great example of syncing hooks and browser storage.",
+      "topic": "UI State Management",
+      "difficulty": "Easy",
+      "timeEstimate": "30 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/1828/1828859.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Conditional rendering",
+        "State persistence",
+        "Reusability in UI components"
+      ],
+      "tip": "Keep tab labels dynamic using props or context."
+    },
+    {
+      "id": "4.16",
+      "title": "Countdown Timer with useEffect",
+      "shortDescription": "Create a countdown timer that updates every second.",
+      "longDescription": "Build a countdown that decreases by 1 every second using useEffect and cleanup. This strengthens your understanding of effect timing and dependencies.",
+      "topic": "Timers & Cleanup",
+      "difficulty": "Easy",
+      "timeEstimate": "25–35 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/753/753318.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Interval management",
+        "useEffect cleanup functions",
+        "Dependency array handling"
+      ],
+      "tip": "Clear the interval when the timer hits zero to prevent memory leaks."
+    },
+    {
+      "id": "4.17",
+      "title": "Responsive Navbar with useLayoutEffect",
+      "shortDescription": "Adjust navigation layout dynamically based on screen width.",
+      "longDescription": "Use `useLayoutEffect` to detect layout changes and resize events to optimize responsive navigation. You’ll understand when and why to use layout effects over normal effects.",
+      "topic": "Layout Effects",
+      "difficulty": "Medium",
+      "timeEstimate": "50 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/1828/1828854.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "useLayoutEffect timing",
+        "Detecting resize events",
+        "Responsive UI handling"
+      ],
+      "tip": "Use debounce for resize events to prevent performance issues."
+    },
+    {
+      "id": "4.18",
+      "title": "WebSocket Chat with useEffect",
+      "shortDescription": "Implement real-time chat using WebSockets and useEffect.",
+      "longDescription": "Build a lightweight chat app that uses WebSocket for real-time updates. You’ll learn how to open, listen, and close sockets properly with hooks.",
+      "topic": "Realtime Data & Cleanup",
+      "difficulty": "Hard",
+      "timeEstimate": "90–120 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/4712/4712109.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Handling live connections",
+        "useEffect cleanup for sockets",
+        "Efficient data updates"
+      ],
+      "tip": "Ensure socket cleanup on component unmount to avoid leaks."
+    },
+    {
+      "id": "4.19",
+      "title": "Animation Trigger with useInView Hook",
+      "shortDescription": "Animate components when they enter the viewport.",
+      "longDescription": "Create a hook using Intersection Observer that triggers animations when elements scroll into view. This project focuses on UI enhancement using advanced React and browser APIs.",
+      "topic": "Animations & Observers",
+      "difficulty": "Hard",
+      "timeEstimate": "60–75 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/724/724979.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Intersection Observer API",
+        "Custom animation hooks",
+        "Performance-friendly animations"
+      ],
+      "tip": "Combine with Framer Motion for smooth entrance animations."
+    },
+    {
+      "id": "4.20",
+      "title": "Media Player Hook",
+      "shortDescription": "Build a custom hook to manage video/audio playback.",
+      "longDescription": "Create a `useMediaPlayer` hook to control play, pause, volume, and seek functionalities. Perfect for understanding controlled components with refs and effects.",
+      "topic": "Refs & Media Handling",
+      "difficulty": "Hard",
+      "timeEstimate": "90 mins",
+      "icon": "https://cdn-icons-png.flaticon.com/512/727/727245.png",
+      "status": "Not Started",
+      "learnPoints": [
+        "Media API control",
+        "Refs for DOM elements",
+        "Hook composition"
+      ],
+      "tip": "Expose functions like `play`, `pause`, and `togglePlay` from the hook."
+    }
+  ]
+},
+    {
+      "id": 5,
+      "name": "Data Visualization",
+      "color": "#8B5CF6",
+      "icon": "📊",
+      "description": "Visualize your data interactively using React and Chart.js.",
+      "challenges": [
+        {
+          "id": "dv1",
+          "title": "Doughnut Chart Tracker",
+          "shortDescription": "Show stats visually using a doughnut chart.",
+          "longDescription": "🧭 **Where to start:** Use Chart.js and react-chartjs-2 to render progress stats. Pass dynamic props from state.\n\n💡 **Hint:** Customize colors, tooltips, and labels.\n\n🧱 **What you’ll learn:** Chart data structure, options config, and interactivity.",
+          "topic": "React Charts",
+          "difficulty": "Easy",
+          "timeEstimate": "25–30 mins",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+          "status": "Not Started",
+          "learnPoints": [
+            "Integrating Chart.js",
+            "Customizing datasets",
+            "Legend configuration"
+          ],
+          "tip": "Experiment with cutout and border radius."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Mini Games",
+      "color": "#6D28D9",
+      "icon": "🎮",
+      "description": "Fun interactive projects to improve your React event handling and logic.",
+      "challenges": [
+        {
+          "id": "g1",
+          "title": "Tic Tac Toe",
+          "shortDescription": "Classic X/O game using React state.",
+          "longDescription": "🧭 **Where to start:** Represent the board as an array of 9 items. Render buttons for each square and track turns.\n\n💡 **Hint:** Detect wins by checking array combinations.\n\n🧱 **What you’ll learn:** State logic, game rules, and conditional rendering.",
+          "topic": "React Logic",
+          "difficulty": "Intermediate",
+          "timeEstimate": "40–50 mins",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+          "status": "Not Started",
+          "learnPoints": [
+            "State arrays",
+            "Win detection logic",
+            "Player turns"
+          ],
+          "tip": "Store history to allow undo moves."
+        }
+      ]
+    }
+  ]
+}
