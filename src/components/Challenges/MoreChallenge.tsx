@@ -6,16 +6,14 @@ const MoreChallenge = () => {
   const navigate = useNavigate();
 const { moreCategories } = useChallenges();
 
-
-
-  const handleButtonChallenge = (categoryName: string) => {
+const handleButtonChallenge = (categoryName: string) => {
     navigate(`/more-challenges/${encodeURIComponent(categoryName)}`);
   };
 
   return (
     <div className="p-6">
       <div className="flex items-center mt-1">
-        <a href="/" className="mr-[0.1rem] flex font-semibold">
+        <a href={`${import.meta.env.BASE_URL}`}className="mr-[0.1rem] flex font-semibold">
           Home
         </a>
         <NavigateNextIcon fontSize="small" />
@@ -51,6 +49,8 @@ const { moreCategories } = useChallenges();
           </div>
         ))}
       </div>
+
+    
     </div>
   );
 };

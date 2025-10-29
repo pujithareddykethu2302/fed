@@ -21,8 +21,6 @@ export const router = createBrowserRouter(
         { path: "contact-us", element: <ContactUs /> },
         { path: "my-planner", element: <Planner /> },
         { path: "codepen", element: <CodePen /> },
-
-        // ✅ React Challenges route
         {
           path: "react-challenges",
           children: [
@@ -33,14 +31,12 @@ export const router = createBrowserRouter(
             },
           ],
         },
-
-        // ✅ More Challenges routes
         {
           path: "more-challenges",
           children: [
-            { index: true, element: <MoreChallenge /> }, // shows all categories
+            { index: true, element: <MoreChallenge /> },
             {
-              path: ":categoryName", // e.g. /more-challenges/React Fun Projects
+              path: ":categoryName", 
               element: <CategoryChallenges />,
             },
             {
@@ -52,7 +48,8 @@ export const router = createBrowserRouter(
       ],
     },
   ],
-  {
-    basename: import.meta.env.PROD ? "/fed" : "/",
+ {
+    basename: import.meta.env.BASE_URL,
   }
+
 );
