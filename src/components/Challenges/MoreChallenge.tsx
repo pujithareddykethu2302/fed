@@ -1,21 +1,13 @@
 import { useNavigate } from "react-router-dom";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
-import { useEffect } from "react";
 import { useChallenges } from "../common/ChallengeContext";
 
 const MoreChallenge = () => {
   const navigate = useNavigate();
-const { moreCategories, setMoreCategories } = useChallenges();
-
-useEffect(() => {
-  fetch(`${import.meta.env.BASE_URL}data/moreChallenges.json`)
-    .then((res) => res.json())
-    .then((data) => setMoreCategories(data.categories || []));
-}, []);
+const { moreCategories } = useChallenges();
 
 
 
-  console.log("categories", moreCategories)
   const handleButtonChallenge = (categoryName: string) => {
     navigate(`/more-challenges/${encodeURIComponent(categoryName)}`);
   };

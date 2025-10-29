@@ -46,7 +46,7 @@ function ServerDay(props: ServerDayProps) {
         day={day}
         outsideCurrentMonth={outsideCurrentMonth}
         onClick={() => onDayClick?.(day)}
-        selected={isSelected} // <-- important to tell MUI this day is selected
+        selected={isSelected} 
         sx={{
           ...(isSelected && {
             backgroundColor: "#563A9C !important",
@@ -62,11 +62,11 @@ function ServerDay(props: ServerDayProps) {
   );
 }
 
-/** Main Calendar Component */
+
 export default function DateCalendarServerRequest() {
   const [highlightedDays, setHighlightedDays] = React.useState<string[]>([]);
 
-  /** Handle click to toggle highlight */
+
   const handleDayClick = (day: Dayjs) => {
     const formatted = day.format("YYYY-MM-DD");
     setHighlightedDays((prev) =>

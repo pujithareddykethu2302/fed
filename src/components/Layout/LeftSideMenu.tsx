@@ -10,13 +10,16 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import WbIncandescentOutlinedIcon from "@mui/icons-material/WbIncandescentOutlined";
 import LibraryBooksOutlinedIcon from "@mui/icons-material/LibraryBooksOutlined";
-
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
-import { useState } from "react";
 import { NavLink } from "react-router-dom";
-
-const LeftsideSideMenuBar = () => {
-  const [CloseMenu, setcloseMenu] = useState(true);
+interface LeftsideSideMenuBar {
+  CloseMenu: boolean;
+  setcloseMenu: any;
+}
+const LeftsideSideMenuBar = ({
+  CloseMenu,
+  setcloseMenu,
+}: LeftsideSideMenuBar) => {
   const SideMenuData = [
     {
       title: "DashBoard",
@@ -28,7 +31,7 @@ const LeftsideSideMenuBar = () => {
       icon: (
         <WbIncandescentOutlinedIcon sx={{ color: "white" }} fontSize="small" />
       ),
-      path: "/more-challenges" ,
+      path: "/more-challenges",
     },
     {
       title: "My Planner",
@@ -38,7 +41,7 @@ const LeftsideSideMenuBar = () => {
     {
       title: "React Challenges",
       icon: <MilitaryTechIcon sx={{ color: "white" }} fontSize="small" />,
-      path: "/react-challenges" ,
+      path: "/react-challenges",
     },
     {
       title: "Contact Us",
@@ -62,32 +65,31 @@ const LeftsideSideMenuBar = () => {
     <>
       <div className="bg-[#563A9C] flex  flex-col px-[15px] py-[15px] h-full sm-z-20">
         <div className="flex flex-row justify-between items-center w-full py-2.5 h-[13vh]">
-          <div className="flex justify-center items-center">
-            <p className="text-[24px] font-bold leading-6 text-[#ffffff]">
-              {" "}
-              FED !
-            </p>
+          <div className="flex flex-row justify-between items-center w-full py-2.5 h-[13vh]">
+            <div className="flex justify-center items-center">
+              <p className="text-[24px] font-bold leading-6 text-[#ffffff]">
+                {" "}
+                FED !
+              </p>
+            </div>
+            <div className="flex">
+              <button
+                className="cursor-pointer border border-white rounded-sm h-10 w-10 flex justify-center items-center"
+                onClick={() => {
+                  setcloseMenu(!CloseMenu);
+                }}
+              >
+                <MenuOpenIcon sx={{ color: "white" }} />
+              </button>
+            </div>
           </div>
-          <div className="flex">
-            <button
-              className="cursor-pointer border border-white rounded-sm h-10 w-10 flex justify-center items-center"
-              onClick={() => {
-                setcloseMenu(!CloseMenu);
-              }}
-            >
-              <MenuOpenIcon sx={{ color: "white" }} />
-            </button>
-          </div>
+
         </div>
 
         <div>
           {SideMenuData.map((items: any, key) => {
             return (
-              <NavLink
-                className="flex my-[30px]"
-                key={key}
-                to={items.path}
-              >
+              <NavLink className="flex my-[30px]" key={key} to={items.path}>
                 <p className="w-[20%]">{items.icon}</p>
                 <p className="text-white text-[16px] font-normal">
                   {items.title}

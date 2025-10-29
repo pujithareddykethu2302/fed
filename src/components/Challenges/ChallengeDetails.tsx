@@ -76,7 +76,6 @@ const handleMarkAsCompleted = () => {
     else navigate("/react-challenges");
   };
 
-  // ✅ Loading / Not found
   if (loading) return <p className="text-center mt-20 text-gray-500">Loading...</p>;
   if (!challenge)
     return <p className="text-center mt-20 text-red-500">Challenge not found 😔</p>;
@@ -90,11 +89,9 @@ const handleMarkAsCompleted = () => {
           <img src={challenge.icon} alt="icon" className="w-8 h-8" />
         </div>
 
-        {/* Description */}
         <p className="text-gray-600 mb-4">{challenge.shortDescription}</p>
         <p className="text-gray-800 mb-4 leading-relaxed">{challenge.longDescription}</p>
 
-        {/* Learn points */}
         <div className="bg-[#fcfaff] rounded-lg p-4 mb-4">
           <h3 className="font-semibold text-[#563A9C] mb-2">What You’ll Learn</h3>
           <ul className="list-disc list-inside text-gray-700">
@@ -104,7 +101,7 @@ const handleMarkAsCompleted = () => {
           </ul>
         </div>
 
-        {/* Tip */}
+
         {challenge.tip && (
           <div className="bg-[#FFF8E1] border border-[#FBC02D] rounded-lg p-3 mb-4">
             <p className="font-medium text-[#FBC02D]">💡 Tip:</p>
@@ -112,7 +109,6 @@ const handleMarkAsCompleted = () => {
           </div>
         )}
 
-        {/* 🔘 Buttons Section */}
         <div className="space-x-2 mt-8">
           <button
             className="px-4 py-2 bg-[#FBC02D] text-white rounded"
@@ -149,7 +145,6 @@ const handleMarkAsCompleted = () => {
           )}
         </div>
 
-        {/* 📝 Instructions Section */}
         {openInstruction && (
           <div className="border border-[#FBC02D] rounded-lg p-8 bg-white shadow-sm mt-12">
             <p className="text-gray-800">

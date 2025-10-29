@@ -6,14 +6,13 @@ const AboutUs = () => {
   const navigate = useNavigate();
   return (
     <div>
-      {/* Banner */}
       <div className="relative w-full h-[60vh] sm:h-[600px]">
         <img
           src={bannerImage}
           className="w-full h-full object-cover"
           alt="Banner"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/65 via-black/65 to-black/60 z-0"></div>
+        <div className="absolute inset-0 bg-linear-to-r from-black/65 via-black/65 to-black/60 z-0"></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-4 text-center z-10">
           <p className="text-2xl sm:text-4xl font-bold text-white drop-shadow-lg">
             Master React, One Challenge at a Time — Build with Challenges
@@ -30,7 +29,7 @@ const AboutUs = () => {
         </div>
       </div>
 
-      {/* Who We Are */}
+ 
       <div className="mt-8 flex flex-col md:flex-row items-center justify-center px-4 sm:px-12 gap-8">
         <img
           src={whoWeAre}
@@ -130,7 +129,7 @@ const AboutUs = () => {
       </div>
 
  
-      <div className="text-center py-16 bg-gradient-to-r from-[#563A9C] to-[#7E5CCB] text-white">
+      <div className="text-center py-16 bg-linear-to-r from-[#563A9C] to-[#7E5CCB] text-white">
         <p className="text-2xl sm:text-3xl font-semibold italic tracking-wide">
           “Small Steps. Big Progress.”
         </p>

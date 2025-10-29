@@ -1,17 +1,10 @@
-import { useEffect } from "react";
 import ChallengeCard from "../common/ChallengeCard";
 import { useChallenges } from "../common/ChallengeContext";
 
 const ReactChallenge = () => {
-  const { challenges, setChallenges } = useChallenges();
+  const { challenges } = useChallenges();
 
-  useEffect(() => {
-    if (challenges.length === 0) {
-      fetch(`${import.meta.env.BASE_URL}data/reactchallenges.json`)
-        .then((res) => res.json())
-        .then((data) => setChallenges(data.days || []));
-    }
-  }, []);
+
 
   return (
     <div className="bg-gray-50 min-h-screen p-10">

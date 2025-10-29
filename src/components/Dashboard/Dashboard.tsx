@@ -8,6 +8,7 @@ import { useNavigate } from "react-router-dom";
 import { useNotes } from "../common/NotesContext";
 import { useEffect, useState } from "react";
 import { fetchGreetings } from "../../service/greetingService";
+import StatusGraph from "./StatusGraph";
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -115,6 +116,7 @@ const Dashboard = () => {
                   React 30-days Tracker
                 </p>
               </div>
+              <StatusGraph />
             </div>
             <div className="bg-white rounded-2xl shadow-md  my-4 w-full lg:w-1/2 transition-transform hover:scale-[1.01]">
               <div className="bg-[#563A9C] rounded-t-lg px-4 py-4 flex justify-between items-center">

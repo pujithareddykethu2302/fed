@@ -7,15 +7,14 @@ const CategoryChallenges = () => {
   const { moreCategories, setMoreCategories } = useChallenges();
   const { categoryName } = useParams();
 
-  // decode category name (for URLs like "React%20Fun%20Projects")
+
   const decodedCategoryName = decodeURIComponent(categoryName || "");
 
-  // find the category in context
+
   const category = moreCategories.find(
     (c) => c.name === decodedCategoryName
   );
 
-  // ✅ fetch categories only if context is empty (first load)
   useEffect(() => {
     if (moreCategories.length === 0) {
       fetch("/data/moreChallenges.json")

@@ -37,20 +37,35 @@ export const ChallengeProvider: React.FC<{ children: React.ReactNode }> = ({
   const [challenges, setChallenges] = useState<Challenge[]>([]);
   const [moreCategories, setMoreCategories] = useState<Category[]>([]);
 
-  // 🧠 Update status for both types
+    useEffect(() => {
+    if (challenges.length === 0) {
+      fetch(`${import.meta.env.BASE_URL}data/reactchallenges.json`)
+        .then((res) => res.json())
+        .then((data) => setChallenges(data.days || []));
+    }
+  }, []);
+
+
+useEffect(() => {
+  fetch(`${import.meta.env.BASE_URL}data/moreChallenges.json`)
+    .then((res) => res.json())
+    .then((data) => setMoreCategories(data.categories || []));
+}, []);
+
+
   const updateChallengeStatus = (
     title: string,
     status: string,
     categoryName?: string
   ) => {
-    // 🔹 Update React Challenges
+
     setChallenges((prev) =>
       prev.map((ch) =>
         ch.title === title ? { ...ch, status } : ch
       )
     );
 
-    // 🔹 Update More Challenges (inside a category)
+
     setMoreCategories((prev) =>
       prev.map((cat) => {
         if (cat.name === categoryName) {
@@ -66,7 +81,7 @@ export const ChallengeProvider: React.FC<{ children: React.ReactNode }> = ({
     );
   };
 
-  // 💾 Persist to localStorage
+
   useEffect(() => {
     const saved = localStorage.getItem("challengeData");
     if (saved) {
