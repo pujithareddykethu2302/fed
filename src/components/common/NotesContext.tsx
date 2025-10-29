@@ -1,51 +1,47 @@
-import  { createContext, useContext, useState, type ReactNode } from "react";
+import { createContext, useContext, useState, type ReactNode } from "react";
 
-interface Note {
+type NoteItem = {
   title: string;
   content: string;
   date: string;
-}
+};
 
-interface LinkItem {
+type LinkItem = {
   title: string;
   url: string;
-}
+  date: string; 
+};
 
-interface NotesContextType {
-    notes: Note[],
-  links: LinkItem[],
-  setNotes: React.Dispatch<React.SetStateAction<Note[]>>,
-  setLinks: React.Dispatch<React.SetStateAction<LinkItem[]>>,
-}
-
+type NotesContextType = {
+  notes: NoteItem[];
+  setNotes: React.Dispatch<React.SetStateAction<NoteItem[]>>;
+  links: LinkItem[];
+  setLinks: React.Dispatch<React.SetStateAction<LinkItem[]>>;
+};
 
 const NotesContext = createContext<NotesContextType | undefined>(undefined);
 
 export const NotesProvider = ({ children }: { children: ReactNode }) => {
-  const [notes, setNotes] = useState<Note[]>(() => {
-    const saved = localStorage.getItem("notes");
-    return saved ? JSON.parse(saved) : [];
-  });
-
-
+  const [notes, setNotes] = useState<NoteItem[]>(
+    JSON.parse(localStorage.getItem("notes") || "[]")
+  );
   const [links, setLinks] = useState<LinkItem[]>(() => {
-    const saved = localStorage.getItem("links");
-    return saved ? JSON.parse(saved) : [];
+    const stored = JSON.parse(localStorage.getItem("links") || "[]");
+    return stored.map((l: any) => ({
+      ...l,
+      date: l.date || new Date().toLocaleDateString(),
+    }));
   });
- 
+
   return (
     <NotesContext.Provider value={{ notes, setNotes, links, setLinks }}>
       {children}
     </NotesContext.Provider>
   );
-
 };
 
 export const useNotes = () => {
-  const context = useContext(NotesContext);
-  if (!context) throw new Error("useNotes must be used within a NotesProvider");
-  return context;
+  const ctx = useContext(NotesContext);
+  if (!ctx) throw new Error("useNotes must be used within NotesProvider");
+  return ctx;
 };
-
-
-
