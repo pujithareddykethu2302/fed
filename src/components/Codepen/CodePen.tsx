@@ -57,7 +57,7 @@ const CodePen = () => {
   return (
     <div className="bg-gray-100 min-h-screen p-10">
       <div className="flex items-center mt-1">
-        <a href="/" className="mr-[0.1rem] flex font-semibold">
+        <a href={`${import.meta.env.BASE_URL}`} className="mr-[0.1rem] flex text-[#563A9C] hover:underline">
           Home
         </a>
         <NavigateNextIcon fontSize="small" />
